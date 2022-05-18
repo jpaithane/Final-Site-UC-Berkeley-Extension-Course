@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jui's Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/New Home.html" target="_self">Home</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/page3new.html" target="_self">Get Started</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Page4new.html" target="_self">Topics</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Page5new.html" target="_self">Videos</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Page6new.html" target="_self">Infographics</a></button>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+  
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><button><a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Splash.html"><b>JUI'S BLOG</b></a></button></h1>
+    <h6>Welcome to the blog of <span class="w3-tag">Jui Paithane</span></h6>
+  </header>
+
+  <!--main page content-->
+  <div class="w3-row w3-padding w3-border">
+    
+    <!-- Youtube Videos Emebdded-->
+    <div class="w3-container w3-center w3-white w3-margin w3-padding-large">
+        <iframe width=960 height=540 src="https://www.youtube.com/embed/xD-0jIfo5Kg">
+        </iframe>
+        <button class="accordion">AfterThought News Informed Video on the Hirak Movement in Algeria.</button>
+            <div class="panel">
+            <p>Learn about the Hirak movement in Algeria, as explained by Kyla Kelly (COO AfterThought) and Jui Paithane (AD).</p>
+            </div>
+        <iframe width=960 height=540 src="https://www.youtube.com/embed/ZrGnY7XZxSQ">
+        </iframe>
+        <button class="accordion">AfterThought News Informed Video on the Yemen Crisis.</button>
+                <div class="panel">
+                <p>Learn about the Hunger Crisis in Yemen, as explained by Kyla Kelly (COO AfterThought) and Jui Paithane (AD).</p>
+                </div>
+        <iframe width=960 height=540 src="https://www.youtube.com/embed/Ge5LLX7J0HY">
+        </iframe>
+        <button class="accordion">Social Science Prediction Platform</button>
+                <div class="panel">
+                <p>Learn about SSPP, created by the Berkeley Initative for Trasnparency in the Social Sciences. Video illustration, editing, and voice over done by Jui Paithane.</p>
+                </div>
+
+    </div>
+  </div>
+
+  
+          </div>
+        </div>
+      </div>
+      <hr>
+
+     
+      
+    
+
+<!-- END w3-content -->
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="http://juipaithane.webflow.io" target="_blank">Jui Paithane</a></p>
+</footer>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+
+
+</script>
+
+</body>
+</html>
+

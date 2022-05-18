@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jui's Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+* {
+        box-sizing: border-box
+      }
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+      }
+      .mySlides {
+        display: none
+      }
+      img {
+        vertical-align: middle;
+      }
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* Caption text */
+      .text {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot:hover {
+        background-color: #111111;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px
+        }
+      }
+
+
+</style>
+</head>
+<body class="w3-light-grey">
+    
+
+<!-- Navigation bar -->
+<div class="w3-bar w3-black w3-hide-small">
+  <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/New Home.html" target="_self">Home</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/page3new.html" target="_self">Get Started</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Page4new.html" target="_self">Topics</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Page5new.html" target="_self">Videos</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Page6new.html" target="_self">Infographics</a></button>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- Main content container-->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><button><a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Splash.html"><b>JUI'S BLOG</b></a></button></h1>
+    <h6>Welcome to the blog of <span class="w3-tag">Jui Paithane</span></h6>
+  </header>
+
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Grid entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Introduction entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>LET'S GET STARTED</h3>
+          <h5>Explore all the different courses and subjects you can learn about on my page, <span class="w3-opacity">April 20, 2022</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/we-blame-society-we-are-society-concept.jpg" style="width:100%">
+              <div class="text">Free photo from freepik.com</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/lets-talk-about-1-1.jpg" style="width:100%">
+              <div class="text">YesMagazine.org</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/d41586-020-01883-8_18099414.jpg" style="width:100%">
+              <div class="text">Romy Arroyo Fernandez/NurPhoto/Getty</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <p><strong>ANTI-BLACKNESS</strong> Excerpt from Article titled "Call it What it is: Anti-Blackness" By kihana miraya ross.</p>
+          <p>The word “racism” is everywhere. It’s used to explain all the things that cause African-Americans’ suffering and death: inadequate access to health care, food, housing and jobs, or a police bullet, baton or knee. But “racism” fails to fully capture what black people in this country are facing.
+
+            The right term is “anti-blackness.”
+            
+            To be clear, “racism” isn’t a meaningless term. But it’s a catch-all that can encapsulate anything from black people being denied fair access to mortgage loans, to Asian students being burdened with a “model minority” label. It’s not specific.
+            
+            Many Americans, awakened by watching footage of Derek Chauvin killing George Floyd by kneeling on his neck, are grappling with why we live in a world in which black death loops in a tragic screenplay, scored with the wails of childless mothers and the entitled indifference of our murderers. And an understanding of anti-blackness is the only place to start.
+            
+            Anti-blackness is one way some black scholars have articulated what it means to be marked as black in an anti-black world. It’s more than just “racism against black people.” That oversimplifies and defangs it. It’s a theoretical framework that illuminates society’s inability to recognize our humanity — the disdain, disregard and disgust for our existence.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-clear"></p>
+          
+          
+        </div>
+      </div>
+
+     
+      
+    <!-- END GRID ENTRIES -->
+    </div>
+
+    <!-- About menu -->
+    <div class="w3-col l4">
+
+      <!-- Topics -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Introductory Topics/Discussions</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/60348.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Diversity</span>
+            <br>
+            <span>It's not only about inviting people to the table, but its about amplifying their voices as well.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/60349.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Equity</span>
+            <br>
+            <span>Both equality and equity mean all are equal. Equity recognizes that those that haven't been treated as equal in the past are still suffering from the repercussions of that inequality, that which is embedded in our society.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/80344 [Converted]-02.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Inclusion</span>
+            <br>
+            <span>Diversity means everyone is represented, but Inclusion makes sure that they are listened to as well.</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/80344 [Converted]-02.png" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">Intersectionality</span>
+            <br>
+            <span>Our identities are not seperable, we are who we are as a whole, and intersectionality respects and honors that.</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Race</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Justice</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">USA</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Anti-Blackness</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Inclusion</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Systemic Racism</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Equity</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Identity</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Mass-Incarceration</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Equality</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Intersectionality</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Misogeny</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Diversity</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Research</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Me</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END CONTENT -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="http://juipaithane.webflow.io" target="_blank">Jui Paithane</a></p>
+</footer>
+
+<script>
+
+var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+      
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jui's Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation bar -->
+<div class="w3-bar w3-black w3-hide-small">
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/New Home.html" target="_self">Home</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/page3new.html" target="_self">Get Started</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Page4new.html" target="_self">Topics</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Page5new.html" target="_self">Videos</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Page6new.html" target="_self">Infographics</a></button>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+      <h1 class="w3-xxxlarge"><button><a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Splash.html"><b>JUI'S BLOG</b></a></button></h1>
+      <h6>Welcome to the blog of <span class="w3-tag">Jui Paithane</span></h6>
+    </header>
+  
+    <!--main page content-->
+    <div class="w3-row w3-padding w3-border">
+    <!--Photos-->
+    <div class="w3-container w3-white w3-margin w3-padding-large"><h2 style="text-align:center">Infographics and Designs</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/5.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/6.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/7.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/8.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/3.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/4.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <div class="numbertext">5 / 4</div>
+        <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/5.png" style="width:100%">
+      </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/6.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/7.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/8.png" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/1.png" style="width:100%" onclick="currentSlide(1)" alt="Critical Race Brocure (1/2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/2.png" style="width:100%" onclick="currentSlide(2)" alt="Critical Race Brocure (2/2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/3.png" style="width:100%" onclick="currentSlide(3)" alt="Illustration of Victims of Police Brutality">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/4.png" style="width:100%" onclick="currentSlide(4)" alt="Illustration of the 504-Sit In">
+    </div>
+    <div class="column">
+       <img class="demo cursor" src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/5.png" style="width:100%" onclick="currentSlide(5)" alt="SB In Solidarity Instagram Post">
+    </div>
+     <div class="column">
+      <img class="demo cursor" src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/6.png" style="width:100%" onclick="currentSlide(6)" alt="Critical Race Brocure (2/2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/7.png" style="width:100%" onclick="currentSlide(7))" alt="Illustration of Victims of Police Brutality">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Assets/Images/8.png" style="width:100%" onclick="currentSlide(8)" alt="Illustration of the 504-Sit In">
+    </div>
+  </div>
+</div>
+
+  
+    
+            </div>
+          </div>
+        </div>
+    </div>
+        <hr>
+  
+       
+        
+      
+  
+  <!-- END w3-content -->
+  </div>
+  
+  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-dark-grey" style="padding:32px">
+    <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <p>Powered by <a href="http://juipaithane.webflow.io" target="_blank">Jui Paithane</a></p>
+  </footer>
+  
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("active");
+  
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  
+  // Toggle between hiding and showing blog replies/comments
+  document.getElementById("myBtn").click();
+  function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  function likeFunction(x) {
+    x.style.fontWeight = "bold";
+    x.innerHTML = "✓ Liked";
+  }
+  
+  function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+  </script>
+  
+  </body>
+  </html>
+  
+  

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jui's Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/New Home.html" target="_self">Home</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/page3new.html" target="_self">Get Started</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Page4new.html" target="_self">Topics</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Page5new.html" target="_self">Videos</a></button>
+    <button class="w3-bar-item w3-button"> <a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Page6new.html" target="_self">Infographics</a></button>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><button><a href="/Users/juipaithane/Documents/Class Practice - Berk/Midterm Project/Splash.html"><b>JUI'S BLOG</b></a></button></h1>
+    <h6>Welcome to the blog of <span class="w3-tag">Jui Paithane</span></h6>
+  </header>
+
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>TOPICS TO LEARN ABOUT</h3>
+          <h5>This table contains a list of all topics I have discussed on my blog and through my design materials. <span class="w3-opacity">Last Updated: 4/27/22</span></h5>
+        </div>
+        <p>Click the button to sort the table alphabetically, by name:</p>
+        <p><button onclick="sortTable()">Sort</button></p>
+        
+        <div class="w3-justify">
+            <table id="myTable">
+                <tr>
+                  <th>Topic</th>
+                  <th>Description</th>
+                  <th>Materials</th>
+                </tr>
+                <tr>
+                  <td>Anti-Blackness</td>
+                  <td>Societal inability to humanize Black People throughout history and in current day has created systemic, institutional obstacles for Black Americans and perpetuates active forms of covert and overt racism.</td>
+                  <td>Blog post and explainer video.</td>
+                </tr>
+                <tr>
+                  <td>Race</td>
+                  <td>Race is socially constructed, not biologically natural.</td>
+                  <td>Research Paper</td>
+                </tr>
+                <tr>
+                  <td>Mass-Incarceration</td>
+                  <td>It refers to the fact that the United States is the leading country in incarceration and prison populations; we incarcerate more than 2 million people. Our population makes up less than five percent of the world’s population, but our inmates make up nearly 25 percent of the world’s inmate population.</td>
+                  <td>Research Paper</td>
+                </tr>
+                <tr>
+                    <td>Equity</td>
+                    <td>Societal inability to humanize Black People throughout history and in current day has created systemic, institutional obstacles for Black Americans and perpetuates active forms of covert and overt racism.</td>
+                    <td>Blog post and explainer video.</td>
+                  </tr>
+                  <tr>
+                    <td>Equality</td>
+                    <td>Race is socially constructed, not biologically natural.</td>
+                    <td>Research Paper</td>
+                  </tr>
+                  <tr>
+                    <td>Intersectionality</td>
+                    <td>It refers to the fact that the United States is the leading country in incarceration and prison populations; we incarcerate more than 2 million people. Our population makes up less than five percent of the world’s population, but our inmates make up nearly 25 percent of the world’s inmate population.</td>
+                    <td>Research Paper</td>
+                  </tr>
+                  <tr>
+                    <td>Identity</td>
+                    <td>Societal inability to humanize Black People throughout history and in current day has created systemic, institutional obstacles for Black Americans and perpetuates active forms of covert and overt racism.</td>
+                    <td>Blog post and explainer video.</td>
+                  </tr>
+                  <tr>
+                    <td>Culture</td>
+                    <td>Race is socially constructed, not biologically natural.</td>
+                    <td>Research Paper</td>
+                  </tr>
+                  <tr>
+                    <td>Juvenile Justice System</td>
+                    <td>It refers to the fact that the United States is the leading country in incarceration and prison populations; we incarcerate more than 2 million people. Our population makes up less than five percent of the world’s population, but our inmates make up nearly 25 percent of the world’s inmate population.</td>
+                    <td>Research Paper</td>
+                  </tr>
+                  <tr>
+                    <td>Police Brutality</td>
+                    <td>It refers to the fact that the United States is the leading country in incarceration and prison populations; we incarcerate more than 2 million people. Our population makes up less than five percent of the world’s population, but our inmates make up nearly 25 percent of the world’s inmate population.</td>
+                    <td>Research Paper</td>
+                  </tr>
+                  
+              </table>
+        </div>  
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="http://juipaithane.webflow.io" target="_blank">Jui Paithane</a></p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+
+function sortTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+
+</script>
+
+</body>
+</html>
+
